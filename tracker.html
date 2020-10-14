@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- import bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+   <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap&family=Poppins:wght@600"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+      integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+      integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+      crossorigin="anonymous"
+    ></script>
+    <!--<title>Hello!</title>-->
+       <title>Lifellet | Trackers</title>
+    <link rel="shortcut icon" href="https://cdn.glitch.com/e95be7ba-c55e-4f68-9101-e2465b59f985%2Fl.png?v=1598143774376"/>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+<!--     Navigation Bar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="https://cdn.glitch.com/e95be7ba-c55e-4f68-9101-e2465b59f985%2Fl.png?v=1598143774376"
+          width="30"
+          height="30"
+          alt=""
+          loading="lazy"
+        />
+      </a>
+       <p class="lifellet">
+        Lifellet
+      </p>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="notes.html">Notes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="schedule.html">Schedule</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="tracker.html"
+              >Tracker<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="forum.html">Forum</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <center>
+      <div id="forumbody" align="left">
+    <h1 class="title">Select a tracker:</h1>
+    </div>
+    </center>
+    
+<!--     Grid with all the tracker options -->
+    
+    <div class="container">
+  <div class="row align-items-start">
+    <div class="col">
+      <div class="card cardMargin" style="width: 18rem;">
+        <img class="card-img-top cardImages" src="https://cdn.glitch.com/e95be7ba-c55e-4f68-9101-e2465b59f985%2Fbudget.jpeg?v=1598148610255" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Financial Tracker</h5>
+          <p class="card-text">Keep track of your monthly budget and expenses with this tracker.  </p>
+          <a href="tracker_page.html" class="btn btn-primary">Select</a>
+      </div>
+</div>
+    </div>
+    <div class="col">
+        <div class="card cardMargin" style="width: 18rem;">
+          <img class="card-img-top cardImages" src=" https://cdn.glitch.com/e95be7ba-c55e-4f68-9101-e2465b59f985%2Fworkout.jpeg?v=1598148877993" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Workout Tracker</h5>
+            <p class="card-text">Track your daily workout sessions with this tracker.</p>
+            <a href="tracker_page.html" class="btn btn-primary">Select</a>
+          </div>
+        </div>
+    </div>
+    <div class="col">
+      <div class="card cardMargin" style="width: 18rem;">
+        <img class="card-img-top cardImages" src="https://cdn.glitch.com/e95be7ba-c55e-4f68-9101-e2465b59f985%2Fmood.jpeg?v=1598150744233" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Mood Tracker</h5>
+          <p class="card-text">Track how you feel everyday with this tracker.</p>
+          <a href="tracker_page.html" class="btn btn-primary">Select</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row align-items-center">
+    <div class="col">
+      <div class="card cardMargin" style="width: 18rem;">
+        <img class="card-img-top cardImages" src="https://cdn.glitch.com/e95be7ba-c55e-4f68-9101-e2465b59f985%2Fhabit.jpg?v=1598151101677" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Habit Tracker</h5>
+          <p class="card-text">Select habits to improve on and watch your progress as you improve with this tracker.</p>
+          <a href="tracker_page.html" class="btn btn-primary">Select</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card cardMargin" style="width: 18rem;">
+        <img class="card-img-top cardImages" src="https://cdn.glitch.com/e95be7ba-c55e-4f68-9101-e2465b59f985%2Fsleep.jpeg?v=1598149247813" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Sleep Tracker</h5>
+          <p class="card-text">Track the quality and quantity of your sleep. Set daily sleep goals with this tracker.</p>
+          <a href="tracker_page.html" class="btn btn-primary">Select</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card cardMargin" style="width: 18rem;">
+        <img class="card-img-top cardImages" src="https://cdn.glitch.com/e95be7ba-c55e-4f68-9101-e2465b59f985%2Fbooks.webp?v=1598150125393" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Book Tracker</h5>
+          <p class="card-text">Add a list of books you would like to read. Track the books you've already read.</p>
+          <a href="tracker_page.html" class="btn btn-primary">Select</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row align-items-end">
+    <div class="col">
+      <div class="card cardMargin" style="width: 18rem;">
+        <img class="card-img-top cardImages" src=" https://cdn.glitch.com/e95be7ba-c55e-4f68-9101-e2465b59f985%2Fhomework.jpg?v=1598150339334" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Homework Tracker</h5>
+          <p class="card-text">Keep track of all assignments and turn them in on time.</p>
+          <a href="tracker_page.html" class="btn btn-primary">Select</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card cardMargin" style="width: 18rem;">
+        <img class="card-img-top cardImages" src="https://cdn.glitch.com/e95be7ba-c55e-4f68-9101-e2465b59f985%2Fbirthday.jpeg?v=1598149737658" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Birthday Tracker</h5>
+          <p class="card-text">Remember the birthday's of all your loved ones with this tracker.</p>
+          <a href="tracker_page.html" class="btn btn-primary">Select</a>
+        </div>
+      </div>
+    </div>
+    
+     <div class="col">
+      <div class="card cardMargin" style="width: 18rem;">
+        <img class="card-img-top cardImages" src="https://cdn.glitch.com/e95be7ba-c55e-4f68-9101-e2465b59f985%2Fwater-1.jpg?v=1598154214912" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Water Tracker</h5>
+          <p class="card-text">Track how much water you drink daily.</p>
+          <a href="tracker_page.html" class="btn btn-primary">Select</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card cardMargin" style="width: 18rem;">
+        <img class="card-img-top cardImages" src="https://cdn.glitch.com/e95be7ba-c55e-4f68-9101-e2465b59f985%2Ftravel.jpeg?v=1598151716563" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Travel Tracker</h5>
+          <p class="card-text">Track the places you would like to travel to.</p>
+          <a href="tracker_page.html" class="btn btn-primary">Select</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card cardMargin" style="width: 18rem;">
+        <img class="card-img-top cardImages" src="https://cdn.glitch.com/e95be7ba-c55e-4f68-9101-e2465b59f985%2Fjob_search.jpeg?v=1598152096694" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Job Search Tracker</h5>
+          <p class="card-text">Track your job search and interviews with this tracker.</p>
+          <a href="tracker_page.html" class="btn btn-primary">Select</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card cardMargin" style="width: 18rem;">
+        <img class="card-img-top cardImages" src="https://cdn.glitch.com/e95be7ba-c55e-4f68-9101-e2465b59f985%2Fplus.png?v=1598155251844" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Custom Tracker</h5>
+          <p class="card-text">Create your own custom tracker from one of our templates.</p>
+          <a href="tracker_page.html" class="btn btn-primary">Select</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+       <hr>
+    <p class="copyright">
+      © lifellet.com, Inc. All rights reserved.
+    </p>
+  </body>
+</html>
