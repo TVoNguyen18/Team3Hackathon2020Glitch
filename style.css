@@ -1,0 +1,146 @@
+/* CSS files add styling rules to your content */
+body {
+  font-family: lato, arial, sans-serif;
+  margin: 2em;
+
+  
+}
+h1 {
+  color:black;
+}
+#createNewPost{
+  width:40%;
+
+}
+#forumbody{
+  margin-top:50px;
+  width:90%;
+}
+#forumposts{
+  margin-top:50px;
+  width:80%;
+}
+.postCards{
+  margin-top:5%;
+  margin-bottom:5%;
+  text-align:left;
+}
+.inline{
+  display:inline;
+}
+.cardImages{
+  width:match;
+  height:200px;
+}
+.cardMargin{
+  margin-top:5%;
+}
+#coverImg{
+  width:100%;
+  margin-top:5%;
+  height:30%;
+}
+
+
+/** No touchy it buggy **/
+.image-map-container {
+    position: relative;
+    display:inline-block;
+}
+.image-map-container img {
+    display:block;
+}
+.image-map-container .map-selector {
+    left:0;top:0;right:0;bottom:0;
+    color:#546E7A00;
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+    transition-property: top, left, right, bottom, color;
+}
+.image-map-container .map-selector.hover {
+    color:#546E7A80;
+}
+
+.map-selector:after {
+    content: '';
+    position: absolute;
+    top: inherit;right: inherit;bottom: inherit;left: inherit;
+    background: currentColor;
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+    transition-property: top, left, right, bottom, background;
+    pointer-events: none;
+}
+
+.bgimage {
+  margin-top:30px;
+  width:100%;
+  height:350px;
+  background: url("https://cdn.glitch.com/e95be7ba-c55e-4f68-9101-e2465b59f985%2Fcover%20img.jpg?v=1598207671844");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+
+}
+.bgimage h1 {
+  font-size:128px;
+  margin-top:2.5%;
+  margin-left:5%;
+ font-family: 'Poppins', sans-serif;
+  color:white;
+
+}
+.bgimage h2 {
+  font-size:34px;
+  margin-left:45%;
+ font-family: 'Poppins', sans-serif;
+  color:white;
+
+}
+.bgimage button{
+  font-size:20px;
+   
+  color:white;
+
+}
+#calender{
+  height:100px;
+}
+.paragraph{
+  font-size:22px;
+  margin-left:10%;
+  margin-right:10%;
+  margin-bottom:30px;
+  text-align:left;
+}
+.heading{
+  margin-top:30px;
+ margin-left:5%;
+}
+#img2{
+  width:100%;
+}
+.copyright{
+  text-align:center;
+}
+.lifellet{
+  font-family: 'Poppins', sans-serif;
+  font-size:30px;
+  vertical-align:middle;
+  margin-bottom:0;
+  margin-left:10px;
+  margin-right:10px;
+}
+/** Notes CSS  start**/
+
+#post-title {
+  font-size: 90px;
+}
+
+#post-text {
+  font-size: 35px;
+}
+
+
+
+/** Notes CSS  ends**/

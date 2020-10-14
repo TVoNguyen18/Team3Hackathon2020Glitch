@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- import bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <style>
+      /** {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }*/
+    </style>
+    <!-- import the webpage's javascript file -->
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap&family=Poppins:wght@600"
+      rel="stylesheet"
+    />
+    
+    <title>Lifellet | Schedule/Calendar</title>
+     
+    <link rel="shortcut icon"
+ href="https://cdn.glitch.com/e95be7ba-c55e-4f68-9101-e2465b59f985%2Fl.png?v=1598143774376">
+
+    <!--     Navigation Bar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="https://cdn.glitch.com/e95be7ba-c55e-4f68-9101-e2465b59f985%2Fl.png?v=1598143774376"
+          width="30"
+          height="30"
+          alt=""
+          loading="lazy"
+            
+        />
+      </a>
+       <p class="lifellet">
+        Lifellet
+      </p>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="notes.html">Notes</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="schedule.html"
+              >Schedule<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tracker.html">Tracker</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="forum.html">Forum</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    
+
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    
+    <!--<div id="aModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <h1 style="text-align:center">
+          Select a day to see its entry
+        </h1>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>-->
+    
+    <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="border-color: #dfdfdf;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p style="text-align:center">Select a day to see its entry.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+    
+    
+    
+    
+    
+    
+    <div style="text-align:center;">
+      
+      <div id="image-related-stuff">
+        <div class="image-map-container">
+          <img id="calendar" class="center-fit" src="https://cdn.glitch.com/e95be7ba-c55e-4f68-9101-e2465b59f985%2FAugustV2.png?v=1598209802765" height="600" alt="Calendar" usemap="#image-map" />
+          <div class="map-selector"></div>
+        </div>
+
+        <map name="image-map" id="image-map">
+          <area alt="" id="8-1" title="" href="journal-page-viewer.html" shape="rect" coords="340,415,390,465" />
+          <!--<area alt="" id="8-1" title="" href="journal-page-viewer.html" shape="rect" coords="1260,455,1310,505" />
+          <area alt="" id="8-8" title="" href="journal-page-viewer.html" shape="rect" coords="1260,530,1310,580" />
+          <area alt="" id="8-15" title="" href="journal-page-viewer.html" shape="rect" coords="1260,605,1310,655" />
+          <area alt="" id="8-22" title="" href="journal-page-viewer.html" shape="rect" coords="1260,680,1310,730" />
+          <area alt="" id="8-29" title="" href="journal-page-viewer.html" shape="rect" coords="1260,755,1310,805" />
+        
+        
+          <area alt="" id="8-7" title="" href="journal-page-viewer.html" shape="rect" coords="1150,530,1200,580" />
+          <area alt="" id="8-14" title="" href="journal-page-viewer.html" shape="rect" coords="1150,605,1200,655" />
+          <area alt="" id="8-21" title="" href="journal-page-viewer.html" shape="rect" coords="1150,680,1200,730" />
+          <area alt="" id="8-28 "title="" href="journal-page-viewer.html" shape="rect" coords="1150,755,1200,805" />
+        
+          <area alt="" id="8-6" title="" href="journal-page-viewer.html" shape="rect" coords="1045,530,1095,580" />
+          <area alt="" id="8-13" title="" href="journal-page-viewer.html" shape="rect" coords="1045,605,1095,655" />
+          <area alt="" id="8-20" title="" href="journal-page-viewer.html" shape="rect" coords="1045,680,1095,730" />
+          <area alt="" id="8-27" title="" href="journal-page-viewer.html" shape="rect" coords="1045,755,1095,805" />
+        
+          <area alt="" id="8-5" title="" href="journal-page-viewer.html" shape="rect" coords="940,530,990,580" />
+          <area alt="" id="8-12" title="" href="journal-page-viewer.html" shape="rect" coords="940,605,990,655" />
+          <area alt="" id="8-19" title="" href="journal-page-viewer.html" shape="rect" coords="940,680,990,730" />
+          <area alt="" id="8-26" titletitle="" href="journal-page-viewer.html" shape="rect"  coords="940,755,990,805" />
+        
+          <area alt="" id="8-4" titletitle="" href="journal-page-viewer.html" shape="rect" coords="835,530,885,580" />
+          <area alt="" id="8-11" titletitle="" href="journal-page-viewer.html" shape="rect" coords="835,605,885,655" />
+          <area alt="" id="8-18" titletitle="" href="journal-page-viewer.html" shape="rect" coords="835,680,885,730" />
+          <area alt="" id="8-25" titletitle="" href="journal-page-viewer.html" shape="rect" coords="835,755,885,805" />
+        
+          <area alt="" id="8-3" titletitle="" href="journal-page-viewer.html" shape="rect" coords="730,530,780,580" />
+          <area alt="" id="8-10" titletitle="" href="journal-page-viewer.html" shape="rect" coords="730,605,780,655" />
+          <area alt="" id="8-17" titletitle="" href="journal-page-viewer.html" shape="rect" coords="730,680,780,730" />
+          <area alt="" id="8-24" titletitle="" href="journal-page-viewer.html" shape="rect" coords="730,755,780,805" />
+          <area alt="" id="8-31" titletitle="" href="journal-page-viewer.html" shape="rect" coords="730,830,780,880" />
+        
+          <area alt="" id="8-2" titletitle="" href="journal-page-viewer.html" shape="rect" coords="620,530,670,580" />
+          <area alt="" id="8-9" titletitle="" href="journal-page-viewer.html" shape="rect" coords="620,605,670,655" />
+          <area alt="" id="8-16" titletitle="" href="journal-page-viewer.html" shape="rect" coords="620,680,670,730" />
+          <area alt="" id="8-23" titletitle="" href="journal-page-viewer.html" shape="rect" coords="620,755,670,805" />
+          <area alt="" id="8-30" titletitle="" href="journal-page-viewer.html" shape="rect" coords="620,830,670,880" />-->
+        </map>
+      </div>
+    </div>
+       <hr>
+    <p class="copyright">
+      © lifellet.com, Inc. All rights reserved.
+    </p>
+    <script type="text/javascript">
+      $(window).on('load',function(){
+          $('#aModal').modal('show');
+      });
+    </script>
+    
+    <script>
+    
+      $(window).on('load',function(){
+        $('#myModal').modal('show');
+      });
+      
+      // Get the <span> element that closes the modal
+      //var span = document.getElementsByClassName("closethis")[0];
+      
+      
+      // span.onclick = function() {
+      //   $('#aModal').modal('close');
+      // }
+      
+      // When the user clicks anywhere outside of the modal, close it
+      // window.onclick = function(event) {
+      //   if (event.target == modal) {
+      //     modal.style.display = "none";
+      //   }
+      // }
+    
+    </script>
+  </body>
+</html>
